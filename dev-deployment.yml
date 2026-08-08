@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: dev-deployment
+  namespace: dev
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+        app: blinkit 
+  template:
+    metadata:
+      labels:
+        app: blinkit
+    spec:
+      containers:
+        - name: blinkit-container
+          image: venky223/nginx:blinkit
+          ports:
+            - containerPort: 80

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dev-service
+  namespace: dev
+spec:
+  type: LoadBalancer
+  selector:
+    app: blinkit 
+  ports:
+    - port: 1111
+      targetPort: 80
