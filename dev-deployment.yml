@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: snake-container
-          image: venky223/snake-game:latest
+          image: venky223/snake-game:v1
           ports:
             - containerPort: 80
