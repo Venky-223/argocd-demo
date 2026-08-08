@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: blinkit-container
-          image: venky223/nginx:blinkit
+          image: venky223/djrepo:djv4
           ports:
             - containerPort: 80
