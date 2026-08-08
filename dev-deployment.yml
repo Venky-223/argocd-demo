@@ -11,10 +11,10 @@ spec:
   template:
     metadata:
       labels:
-        app: blinkit
+        app: snake
     spec:
       containers:
         - name: snake-container
-          image: venky223/snake-game
+          image: venky223/snake-game:latest
           ports:
             - containerPort: 80
