@@ -7,14 +7,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-        app: blinkit 
+        app: snake
   template:
     metadata:
       labels:
         app: blinkit
     spec:
       containers:
-        - name: blinkit-container
-          image: venky223/djrepo:djv4
+        - name: snake-container
+          image: venky223/snake-game
           ports:
             - containerPort: 80
