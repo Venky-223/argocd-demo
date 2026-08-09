@@ -9,4 +9,4 @@ spec:
     app: snake
   ports:
     - port: 1111
-      targetPort: 80
+      targetPort: 5000
